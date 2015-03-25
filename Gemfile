@@ -5,7 +5,7 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+
 gem 'devise'
 gem 'devise_invitable'
 
@@ -53,6 +53,7 @@ gem 'jquery-rails'
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
   #gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'mysql2'
 end
 
 group :test do
@@ -73,4 +74,9 @@ end
 
 # To use debugger
 # gem 'ruby-debug'
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
