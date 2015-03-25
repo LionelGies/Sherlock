@@ -25,7 +25,7 @@ gem 'flash_cookie_session'
 
 gem 'rmagick'
 
-gem 'raspell'
+gem 'raspell', '1.3'
 
 gem 'rubyzip'
 
