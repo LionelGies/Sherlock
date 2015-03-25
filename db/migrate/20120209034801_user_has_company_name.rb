@@ -1,7 +1,7 @@
 class UserHasCompanyName < ActiveRecord::Migration
   def up
     add_column :users, :company_name, :string
-    ActiveRecord::Base.connection.execute('UPDATE users SET company_name = "a"')
+    #ActiveRecord::Base.connection.execute('UPDATE users SET company_name = "a"')
   end
 
   def down
